@@ -1,15 +1,15 @@
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game'), Main = function () {
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game'), main = function () {
 
 };
 
-Main.prototype = {
+main.prototype = {
 
   preload: function () {
 
-    game.load.image('forest', './assets.img/forest.jpg');
-    game.load.image('loading', './assets.img/loading.jpg');
-    game.load.image('logo', './assets.img/brand-cat.png');
-    game.load.script('splash', 'splash.js');
+    game.load.image('forest', './assets/img/forest.jpg');
+    game.load.image('loading', './assets/img/loading.jpg');
+    game.load.image('logo', './assets/img/logo-cat.png');
+    game.load.script('splash', 'states/splash.js');
 
   },
 
@@ -22,5 +22,5 @@ Main.prototype = {
 
 };
 
-game.state.add('Main', Main);
-game.state.start('Main');
+game.state.add('main', main);
+game.state.start('main');
