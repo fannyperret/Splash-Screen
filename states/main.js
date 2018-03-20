@@ -9,7 +9,7 @@ main.prototype = {
     game.load.image('forest', './assets/img/forest.jpg');
     game.load.image('loading', './assets/img/loading.jpg');
     game.load.image('logo', './assets/img/logo-cat.png');
-    game.load.script('splash', 'states/splash.js');
+    game.load.script('splash', 'splash.js');
 
   },
 
